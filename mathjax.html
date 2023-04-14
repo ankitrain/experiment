@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app2.js"></script>
+    <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            実験
+        </h1>
+        <p>
+            Anki Trainの開発において, ブラウザの互換性の確認のため, あらゆる機能のテストにご協力ください。
+        </p>
+        <p>
+            このページは数式表示に関する実験用です。
+        </p>
+        <p>
+            <a href="./index.html">通常版 実験ページ</a> &larr; こちらにもご協力ください。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                MathJaxの実験
+            </h2>
+            <p>
+                MathJaxをもちいて, LaTeX形式で数式を表現できるようです。
+            </p>
+            <ol>
+                <li>
+                    <span id="a1">
+                        $$
+                        f(x)=x^2 +2x +1 = (x+1)^2$$
+                    </span>
+                    
+                </li>
+                <li>
+                    <span id="a2">
+                        $$
+                        \vec{v} = \frac{\mathbb{d}\vec{x}}{\mathbb{d}t}
+                $$
+                    </span>
+                </li>
+                <li>
+                    <span id="a3">
+                        $$
+                        \int_0^t \vec{a}\mathbb{d}t = \vec{v}
+                    $$
+                    </span>
+                </li>
+                <li>
+                    <span id="a4">
+                        $$
+                        S_n = \sum_{i=0}^n a_n
+                    $$
+                    </span>
+                </li>
+                <li>
+                    <span id="a5">
+                        $$
+                            f^\prime = \lim_{\Delta x \to 0} \frac{f(x+\Delta x) - f(x)}{\Delta x} = \frac{df(x)}{dx}
+                        $$
+                    </span>
+                </li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>

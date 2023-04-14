@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app2.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            実験
+        </h1>
+        <p>
+            Anki Trainの開発において, ブラウザの互換性の確認のため, あらゆる機能のテストにご協力ください。
+        </p>
+        <p>
+            機能といっても, 表示に関する問題だけです。
+        </p>
+        <p>
+            <a href="./mathjax.html">MathJax 実験ページ</a> &larr; こちらにもご協力ください。事情あって別ページになっています。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                表示テーマに関して
+            </h2>
+            <p>
+                テーマボタンを押して, テーマが変わるときのアニメーションを確認してください。どこまで見やすいかとかそこいらも見てくれると助かります。
+            </p>
+            <div>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span><span onclick="DandL()" class="bt bt_lightdark">テーマ</span><span onclick="DandL()" class="bt bt_lightdark">テーマ</span><span onclick="DandL()" class="bt bt_lightdark">テーマ</span><span onclick="DandL()" class="bt bt_lightdark">テーマ</span><span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+            </div>
+            <details>
+                <summary>
+                    開けてみて
+                </summary>
+                <p>
+                    中身は空っぽでした^^
+                </p>
+            </details>
+        </section>
+        <section>
+            <h2>
+                数式表示に関して (Math ML)
+            </h2>
+            <p>
+                以下の数式がどのように表示されているかをリポートしてください。<br/>
+                スクリーンショットしてくれるのが助かります。
+            </p>
+            <ol>
+                <li>
+                    <span id="a1">
+                        <math>
+                            <mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo> <mo>=</mo> <msup><mi>x</mi><mn>2</mn></msup> <mo>+</mo> <mn>2</mn><mi>x</mi> <mo>+</mo> <mn>1</mn> <mo>=</mo> <msup><mrow><mo>(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow> <mn>2</mn></msup> 
+                        </math>
+                    </span>
+                </li>
+                <li>
+                    <span id="a2">
+                        <math>
+                            <mover><mi>v</mi><mo>&rarr;</mo></mover> <mo>=</mo>
+                            <mfrac><mrow><mi>d</mi><mover><mi>x</mi><mo>&rarr;</mo></mover></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac>
+                        </math>
+                    </span>
+
+                </li>
+                <li>
+                    <span id="a3">
+                        <math>
+                            <msubsup><mo>&int;</mo><mn>0</mn><mi>t</mi></msubsup><mover><mi>a</mi><mo>&rarr;</mo></mover><mi>d</mi><mi>t</mi> <mo>=</mo> <mover><mi>v</mi><mo>&rarr;</mo></mover>
+                        </math>
+                    </span>
+                </li>
+                <li>
+                    <span id="a4">
+                        <math>
+                            <msub><mi>S</mi><mi>n</mi></msub> <mo>=</mo> <munderover><mo>&Sigma;</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><msub><mi>a</mi><mi>n</mi></msub>
+                        </math>
+                    </span>
+
+                </li>
+            </ol>
+            <p>
+                MathJax-LaTeX という別の方法を使った数式表示方法も実験しています。
+                <a href="./mathjax.html">それ専用のページ</a>も確認してほしいです。
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+</html>
